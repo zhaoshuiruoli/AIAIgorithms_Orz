@@ -1,6 +1,6 @@
 # Introduction
 
-本项目使用python分别实现了遗传算法（GA）和模拟退火算法（SA）用来解决TSP问题的实际场景，寻求两者差异并调优。数据见xxx。GA算法见xxx, 模拟退火算法见xxx。
+本项目使用python分别实现了遗传算法（GA）和模拟退火算法（SA）用来解决TSP问题和背包问题两种实际场景，寻求两者差异并调优。TSP问题的GA算法见TSP/GA_TSP.py，模拟退火算法见TSP/SA_TSP.py，背包问题的GA算法见BAG/GA_Bag.py，模拟退火算法见Bag/SA_bag.py。
 
 ## Environment
 
@@ -12,17 +12,27 @@
 
 ```
 ├── README.md 
-├── xxx
-├── xxx
+├── TSP
+	├── GA_TSP.py
+	├── SA_TSP.py
+├── BAG
+	├── GA_Bag.py
+	├── SA_Bag.py
+├── TSP.py
+├── Bag.py
 
 ```
 
 文件功能描述：
 
-| 文件 | 描述 |
-| :--: | :--: |
-|      |      |
-|      |      |
+|   文件    |                 描述                 |
+| :-------: | :----------------------------------: |
+| GA_TSP.py |      TSP问题的遗传算法(GA)实现       |
+| SA_TSP.py |    TSP问题的模拟退火算法(SA)实现     |
+|  TSP.py   | TSP问题场景主程序、数据和可视化分析  |
+| GA_Bag.py |      背包问题的遗传算法(GA)实现      |
+| SA_Bag.py |    背包问题的模拟退火算法(SA)实现    |
+|  Bag.py   | 背包问题场景主程序、数据和可视化分析 |
 
 
 
