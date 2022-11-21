@@ -41,7 +41,7 @@ class GA():
             self.mutation(children)
 
             # 更新种群
-            population = parents + children  # 调整顺序
+            population = parents + children
             # print(len(population))
 
 

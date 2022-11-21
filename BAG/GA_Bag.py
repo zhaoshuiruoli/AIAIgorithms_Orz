@@ -24,6 +24,10 @@ class GA_Bag():
     #     return self.get_best(population, fitnesses)
 
     def evolve(self):
+        """
+        这个函数是进行遗传变异及自然选择的，返回的是每次迭代的最优解
+        :return:
+        """
         population = self.initialize_population
 
         # fitness_list = []
@@ -73,6 +77,10 @@ class GA_Bag():
 
     # 计算适应度
     def get_fitness(self, population):
+        """
+        :param population:
+        :return: 返回的是集群中的每个个体的总重与价值
+        """
         fitnesses = []
         for chromosome_state in population:  # 遍历所有的染色体
             value_sum = 0  # 物品重量
@@ -87,6 +95,10 @@ class GA_Bag():
         return fitnesses
 
     def get_fitness_single(self, single):
+        """
+        :param single:
+        :return: 计算的是单个个体的价值
+        """
         protit_single = 0
         for i in range(len(single)):
             if int(single[i]) == 1:
@@ -95,7 +107,7 @@ class GA_Bag():
 
     def nature_select(self, population, fitnesses):
         """
-        自然选择代码，按照一定的概率淘汰掉弱的个体
+        自然选择代码，淘汰掉劣质个体
         :param population:
         :return:
         """
@@ -109,6 +121,11 @@ class GA_Bag():
         return ppopulation_new, fitnesses_new
 
     def roulette_wheel(self, population, fitnesses):
+        """轮盘赌选择
+        :param population:
+        :param fitnesses:
+        :return:
+        """
         fitness_sum = []
         fitnesses_1 = list(np.array(fitnesses)[:, 0])
         value_sum = sum(fitnesses_1)
@@ -127,6 +144,12 @@ class GA_Bag():
         return population_new
 
     def crossover(self, population, fitnesses):
+        """
+        交叉遗传
+        :param population:
+        :param fitnesses:
+        :return: 返回交叉变异后的新种群
+        """
         population_new = []
 
         while len(population_new) < self.num:
@@ -159,6 +182,11 @@ class GA_Bag():
         return population_new
 
     def mutation(self, population):
+        """
+        基因变异
+        :param population:
+        :return: 将变异后的种群返回
+        """
         population_new = []
         for pop in population:
             p = np.random.uniform()
