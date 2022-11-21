@@ -30,11 +30,11 @@
 
 - 遗传算法(GA)
 
-  ![](image\遗传算法.png)
+  ![](./image/遗传算法.png)
 
 - 模拟退火算法(SA)
 
-  ![](image\模拟退火算法.png)
+  ![](./image/模拟退火算法.png)
 
 # Tips
 
@@ -45,19 +45,19 @@
 
 初始
 
-![](image\图片1.png)
+![](./image/图片1.png)
 
 结束
 
-![](image\图片2.png)
+![](./image/图片2.png)
 
 GA优化过程
 
-![](image\图片3.png)
+![](./image/图片3.png)
 
 SA优化过程
 
-![](image\图片4.png)
+![](./image/图片4.png)
 
 # TODO
 
