@@ -30,11 +30,11 @@
 
 - 遗传算法(GA)
 
-  ![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\遗传算法.png)
+  ![](image\遗传算法.png)
 
 - 模拟退火算法(SA)
 
-  ![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\模拟退火算法.png)
+  ![](image\模拟退火算法.png)
 
 # Tips
 
@@ -45,19 +45,19 @@
 
 初始
 
-![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\图片1.png)
+![](image\图片1.png)
 
 结束
 
-![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\图片2.png)
+![](image\图片2.png)
 
 GA优化过程
 
-![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\图片3.png)
+![](image\图片3.png)
 
 SA优化过程
 
-![](/Users/wuxirui/研究生课程/程序设计与算法/作业/算法大作业/image\图片4.png)
+![](image\图片4.png)
 
 # TODO
 
